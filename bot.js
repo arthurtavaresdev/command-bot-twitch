@@ -34,7 +34,6 @@ function onConnectedHandler (addr, port) {
 });
 
   // send command on first execution
-  callCommand();
   setInterval(()=>{
     callCommand();
 }, 60000 * interval)
