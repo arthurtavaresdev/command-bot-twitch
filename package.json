@@ -1,0 +1,25 @@
+{
+  "name": "command-bot-twitch",
+  "version": "1.0.0",
+  "description": "Bot que fica mandando uma mensagem específica num chat da twitch de X em X minutos.",
+  "main": "bot.js",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "tmi.js": "^1.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arthurtavaresdev/command-bot-twitch.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arthurtavaresdev/command-bot-twitch/issues"
+  },
+  "homepage": "https://github.com/arthurtavaresdev/command-bot-twitch#readme"
+}
