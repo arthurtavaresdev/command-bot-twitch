@@ -1,7 +1,7 @@
 const tmi = require('tmi.js');
 require('dotenv').config();
 
-const interval = 1.5 // 1.5 minutes;
+const interval = 0.45
 const username = process.env.TWITCH_USERNAME;
 const password = process.env.TWITCH_TOKEN;
 const args = require('./args.json');
@@ -42,6 +42,13 @@ function onConnectedHandler (addr, port) {
 
 function callCommand(){
   args.forEach(item =>{
-    client.say(item.channel, item.command)
-});
+    const date = new Date();
+    // current hours
+    let hours = date.getHours();
+
+    // current minutes
+    let minutes = date.getMinutes();
+    console.log(`[${hours}:${minutes}] - Executou ${item.command} para o canal ${item.channel}`)
+    client.say(item.channel, item.command)  
+}); 
 }
