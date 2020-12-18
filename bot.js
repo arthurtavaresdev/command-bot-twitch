@@ -1,7 +1,7 @@
 const tmi = require('tmi.js');
 require('dotenv').config();
 
-const interval = 0.45
+const interval = 60;
 const username = process.env.TWITCH_USERNAME;
 const password = process.env.TWITCH_TOKEN;
 const args = require('./args.json');
@@ -11,7 +11,7 @@ const opts = {
     username,
     password,
   },
-  channels: args.map((item)=> item.channel)
+  channels: args.map((item) => item.channel)
 };
 
 // Create a client with our options
@@ -27,28 +27,28 @@ client.connect().catch(console.error);
 
 
 // Called every time the bot connects to Twitch chat
-function onConnectedHandler (addr, port) {
+function onConnectedHandler(addr, port) {
   console.log(`* Connected to ${addr}:${port}`);
-  args.forEach(item =>{
+  args.forEach(item => {
     client.say(item.channel, item.command)
-});
+  });
 
   // send command on first execution
-  setInterval(()=>{
-    callCommand();
-}, 60000 * interval)
+  callCommand();
 }
 
 
-function callCommand(){
-  args.forEach(item =>{
-    const date = new Date();
-    // current hours
-    let hours = date.getHours();
+function callCommand() {
+  args.forEach(item => {
+    setInterval(() => {
+      const date = new Date();
+      // current hours
+      let hours = date.getHours();
 
-    // current minutes
-    let minutes = date.getMinutes();
-    console.log(`[${hours}:${minutes}] - Executou ${item.command} para o canal ${item.channel}`)
-    client.say(item.channel, item.command)  
-}); 
+      // current minutes
+      let minutes = date.getMinutes();
+      console.log(`[${hours}:${minutes}] - Executou ${item.command} para o canal ${item.channel}`)
+      client.say(item.channel, item.command)
+    }, 60000 * item.interval)
+  });
 }

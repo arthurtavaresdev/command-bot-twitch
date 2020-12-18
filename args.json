@@ -1,6 +1,22 @@
 [
     {
+        "channel": "c9judite",
+        "command": "!proteins",
+        "interval": 60
+    },
+    {
         "channel": "danielhe4rt",
-        "command": "->pontos"
+        "command": "->points",
+        "interval": 0.45
+    },
+    {
+        "channel": "streamiebr",
+        "command": "!pontos",
+        "interval": 60
+    },
+    {
+        "channel": "hastad",
+        "command": "!pontos",
+        "interval": 60
     }
 ]
