@@ -5,11 +5,6 @@
         "interval": 60
     },
     {
-        "channel": "danielhe4rt",
-        "command": "->points",
-        "interval": 0.45
-    },
-    {
         "channel": "streamiebr",
         "command": "!pontos",
         "interval": 60
@@ -17,6 +12,36 @@
     {
         "channel": "hastad",
         "command": "!pontos",
+        "interval": 60
+    },
+    {
+        "channel": "jonvlogs",
+        "command": "!pontos",
+        "interval": 60
+    },
+    {
+        "channel": "skipnholive",
+        "command": "!sapocoins",
+        "interval": 60
+    },
+    {
+        "channel": "gaules",
+        "command": "!points",
+        "interval": 60
+    },
+    {
+        "channel": "boltz",
+        "command": "",
+        "interval": 60
+    },
+    {
+        "channel": "yetz",
+        "command": "",
+        "interval": 60
+    },
+    {
+        "channel": "baiano",
+        "command": "",
         "interval": 60
     }
 ]
