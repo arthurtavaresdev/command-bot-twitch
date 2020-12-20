@@ -21,3 +21,13 @@ npm run start
 ```
 
 Para a maior personalização, na raiz há um arquivo chamado `args.json`, onde pode ser passado o canal e comando que deverá ser executado.
+
+```json
+[
+    {
+        "channel": "danielhe4rt",
+        "command": "->pontos",
+        "interval": 1
+    }
+]
+```
