@@ -15,9 +15,19 @@ npm install
 TWITCH_USERNAME = ArthurdeAbreu   # nome de usuário da sua conta.
 TWITCH_TOKEN =                    # token de acesso obtido anteriormente.
 
-npm run start
+node bot.js
 
     Bot is running at irc-ws.chat.twitch.tv:80
 ```
 
 Para a maior personalização, na raiz há um arquivo chamado `args.json`, onde pode ser passado o canal e comando que deverá ser executado.
+
+```json
+[
+    {
+        "channel": "danielhe4rt",
+        "command": "->pontos",
+        "interval": 1
+    }
+]
+```
