@@ -2,46 +2,71 @@
     {
         "channel": "c9judite",
         "command": "!proteins",
-        "interval": 60
+        "interval": 1440
     },
     {
         "channel": "streamiebr",
         "command": "!pontos",
-        "interval": 60
-    },
-    {
-        "channel": "hastad",
-        "command": "!pontos",
-        "interval": 60
+        "interval": 1440
     },
     {
         "channel": "jonvlogs",
         "command": "!pontos",
-        "interval": 60
+        "interval": 1440
     },
     {
         "channel": "skipnholive",
         "command": "!sapocoins",
-        "interval": 60
+        "interval": 1440
     },
     {
         "channel": "gaules",
         "command": "!points",
-        "interval": 60
+        "interval": 1440
     },
     {
-        "channel": "boltz",
+        "channel": "tayhuhu",
         "command": "",
-        "interval": 60
+        "interval": 1440
     },
     {
         "channel": "yetz",
         "command": "",
-        "interval": 60
+        "interval": 1440
     },
     {
         "channel": "baiano",
         "command": "",
-        "interval": 60
+        "interval": 1440
+    },
+    {
+        "channel": "paulanobre",
+        "command": "",
+        "interval": 1440
+    },
+    {
+        "channel": "leticiabranco",
+        "command": "",
+        "interval": 1440
+    },
+    {
+        "channel": "dilera",
+        "command": "",
+        "interval": 1440
+    },
+    {
+        "channel": "thomefn",
+        "command": "!pontos",
+        "interval": 1440
+    },
+    {
+        "channel": "velloso",
+        "command": "",
+        "interval": 1440
+    },
+    {
+        "channel": "zenon_gp",
+        "command": "!pontos",
+        "interval": 1440
     }
 ]
